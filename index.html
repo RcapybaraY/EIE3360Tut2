@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1330 height=746 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -59,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/EIE3360Tut2_web.loader.js";
       var config = {
-        dataUrl: buildUrl + "/EIE3360Tut2_web.data.gz",
-        frameworkUrl: buildUrl + "/EIE3360Tut2_web.framework.js.gz",
-        codeUrl: buildUrl + "/EIE3360Tut2_web.wasm.gz",
+        dataUrl: buildUrl + "/EIE3360Tut2_web.data",
+        frameworkUrl: buildUrl + "/EIE3360Tut2_web.framework.js",
+        codeUrl: buildUrl + "/EIE3360Tut2_web.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "EIE3360Tut2",
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1330px";
+        canvas.style.height = "746px";
       }
 
       loadingBar.style.display = "block";
